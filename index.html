@@ -206,14 +206,18 @@ Twente<br>IEEE Transactions on Robotics (Under Review)</span>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT" width="auto"
+        height="auto"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+          Pipeline of the proposed method Grasp it Like a Pro 2.0. GLP 2.0 starts with the acquisition of a point cloud of the target object.
+          The cloud is decomposed into a generic number N of minimum volume bounding boxes. A model learned from human demonstrations of
+          grasps for exemplary boxes is used to generate a set of 6-DoF grasp poses for the obtained decomposition. A novel grasp quality score, Sg, is
+          introduced based on information about the robotic gripper, the point cloud of the object and the environment, and of the grasp interaction
+          forces estimated using a learned model to rank and select the best grasp among the candidate set.        </h2>
       </div>
       <div class="item" style="text-align: center;">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" class="center"/>
+        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT" class="center" width="550"/>
         <h2 class="subtitle has-text-centered">
           Experimental setup used to record the set of human
           demonstrations. The PhaseSpace cameras (1) are used to track the
@@ -225,18 +229,29 @@ Twente<br>IEEE Transactions on Robotics (Under Review)</span>
           set of recorded demonstrations of a skilled operator grasping cuboids,
           the robot is able to generate a grasp pose for a generic object.        </h2>
       </div>
-      <div class="item">
+      <div class="item" style="text-align: center;">
         <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Frames of a Franka Emika Panda manipulator grasping objects with the Pisa/IIT SoftHand and the Franka Hand.
        </h2>
      </div>
-     <div class="item">
+
+      <div class="item" style="text-align: center;">
+        <!-- Your image here -->
+        <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Results of the comparison with GPD and CS-GQ-CNN using the Pisa/IIT SoftHand. GLP 2.0 outperforms both baselines on the
+          tested objects, relying on a smaller set of demonstrations.
+       </h2>
+     </div>
+     <div class="item" style="text-align: center;">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/carousel5.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        Grasping success rate using the Franka Hand. GLP 2.0 achieves an overall grasping success rate of 85.0%,
+comparable to the one obtained on the same objects with the Pisa/IIT SoftHand (91.25%). GLP 2.0 outperforms the other two baselines,
+which score a success rate lower than 60%.
       </h2>
     </div>
   </div>
@@ -330,7 +345,14 @@ Twente<br>IEEE Transactions on Robotics (Under Review)</span>
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{palleschi2023grasp,
+        title={Grasp it Like a Pro 2.0: A Data-Driven Approach Exploiting Basic Shapes Decomposition and Human Data for Grasping Unknown Objects},
+        author={Palleschi, Alessandro and Angelini, Franco and Gabellieri, Chiara and Park, Do Won and Pallottino, Lucia and Bicchi, Antonio and Garabini, Manolo},
+        journal=IEEE Transactions on Robotics,
+        year={Under Review},
+        publisher={IEEE}
+      }
+      </code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
